@@ -22,6 +22,7 @@ const indexStyle = css`
 
     .social-icons {
         width: 156px;
+        margin-bottom: 24px;
         display: none;
         
         @media screen and (max-width: ${queries.small}px) {

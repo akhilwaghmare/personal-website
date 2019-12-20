@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Navbar } from "../components/Navbar";
-import { colors, fonts } from '../assets/styles/theme';
+import { colors, fonts, queries } from '../assets/styles/theme';
 
 function Base(props) {
     return (
@@ -17,16 +17,14 @@ function Base(props) {
                     margin: 0 auto;
                 }
 
-                h1 {
-                    font: ${fonts.h1};
-                }
+                h1 { font: ${fonts.h1}; }
+                h2 { font: ${fonts.h2}; }
+                h3 { font: ${fonts.h3}; }
 
-                h2 {
-                    font: ${fonts.h2};
-                }
-
-                h3 {
-                    font: ${fonts.h3};
+                @media screen and (max-width: ${queries.small}px) {
+                    h1 { font: ${fonts.h1_mobile}; }
+                    h2 { font: ${fonts.h2_mobile}; }
+                    h3 { font: ${fonts.h3_mobile}; }
                 }
             `}</style>
 
