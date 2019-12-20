@@ -75,7 +75,10 @@ var colors = {
 var fonts = {
   h1: "700 64px 'Open Sans', sans-serif",
   h2: "600 40px 'Open Sans', sans-serif",
-  h3: "600 24px 'Open Sans', sans-serif"
+  h3: "600 24px 'Open Sans', sans-serif",
+  h1_mobile: "700 48px 'Open Sans', sans-serif",
+  h2_mobile: "600 30px 'Open Sans', sans-serif",
+  h3_mobile: "600 18px 'Open Sans', sans-serif"
 };
 var queries = {
   small: 768
@@ -278,7 +281,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function Base(props) {
   return __jsx("div", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["601239108", [_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["156421993", [_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["queries"].small, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1_mobile, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2_mobile, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3_mobile]]]),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -293,20 +296,20 @@ function Base(props) {
   }, __jsx("link", {
     href: "../assets/styles/fonts.css",
     rel: "stylesheet",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["601239108", [_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["156421993", [_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["queries"].small, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1_mobile, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2_mobile, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3_mobile]]]),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
   })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "601239108",
-    dynamic: [_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3],
+    id: "156421993",
+    dynamic: [_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["queries"].small, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1_mobile, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2_mobile, _assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3_mobile],
     __self: this
-  }, "body{background-color:".concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, ";color:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, ";width:1024px;max-width:90%;margin:0 auto;}h1{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, ";}h2{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, ";}h3{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3, ";}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hd2FnaG1hcmUvTGlicmFyeS9Nb2JpbGUgRG9jdW1lbnRzL2NvbX5hcHBsZX5DbG91ZERvY3MvRmlsZXMvQVcgTGFicy9XZWJzaXRlL2xheW91dHMvQmFzZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVK0IsQUFHbUUsQUFRWixBQUlBLEFBSUEsa0NBUHRDLEFBSUEsQUFJQSxZQWhCdUMsbUNBQ3RCLGFBQ0MsY0FDQSxjQUNsQiIsImZpbGUiOiIvVXNlcnMvYXdhZ2htYXJlL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy9jb21+YXBwbGV+Q2xvdWREb2NzL0ZpbGVzL0FXIExhYnMvV2Vic2l0ZS9sYXlvdXRzL0Jhc2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IHsgTmF2YmFyIH0gZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2YmFyXCI7XG5pbXBvcnQgeyBjb2xvcnMsIGZvbnRzIH0gZnJvbSAnLi4vYXNzZXRzL3N0eWxlcy90aGVtZSc7XG5cbmZ1bmN0aW9uIEJhc2UocHJvcHMpIHtcbiAgICByZXR1cm4gKFxuICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPEhlYWQ+XG4gICAgICAgICAgICAgICAgPGxpbmsgaHJlZj0nLi4vYXNzZXRzL3N0eWxlcy9mb250cy5jc3MnIHJlbD0nc3R5bGVzaGVldCcgLz5cbiAgICAgICAgICAgIDwvSGVhZD5cbiAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgICAgICAgYm9keSB7XG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICR7Y29sb3JzLmJsYWNrfTtcbiAgICAgICAgICAgICAgICAgICAgY29sb3I6ICR7Y29sb3JzLndoaXRlfTtcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDEwMjRweDtcbiAgICAgICAgICAgICAgICAgICAgbWF4LXdpZHRoOiA5MCU7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbjogMCBhdXRvO1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIGgxIHtcbiAgICAgICAgICAgICAgICAgICAgZm9udDogJHtmb250cy5oMX07XG4gICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgaDIge1xuICAgICAgICAgICAgICAgICAgICBmb250OiAke2ZvbnRzLmgyfTtcbiAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICBoMyB7XG4gICAgICAgICAgICAgICAgICAgIGZvbnQ6ICR7Zm9udHMuaDN9O1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIGB9PC9zdHlsZT5cblxuICAgICAgICAgICAgPE5hdmJhciAvPlxuICAgICAgICAgICAge3Byb3BzLmNoaWxkcmVufVxuICAgICAgICA8L2Rpdj5cbiAgICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBCYXNlOyJdfQ== */\n/*@ sourceURL=/Users/awaghmare/Library/Mobile Documents/com~apple~CloudDocs/Files/AW Labs/Website/layouts/Base.js */")), __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["Navbar"], {
+  }, "body{background-color:".concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].black, ";color:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["colors"].white, ";width:1024px;max-width:90%;margin:0 auto;}h1{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1, ";}h2{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2, ";}h3{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3, ";}@media screen and (max-width:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["queries"].small, "px){h1{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h1_mobile, ";}h2{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h2_mobile, ";}h3{font:").concat(_assets_styles_theme__WEBPACK_IMPORTED_MODULE_4__["fonts"].h3_mobile, ";}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9hd2FnaG1hcmUvTGlicmFyeS9Nb2JpbGUgRG9jdW1lbnRzL2NvbX5hcHBsZX5DbG91ZERvY3MvRmlsZXMvQVcgTGFicy9XZWJzaXRlL2xheW91dHMvQmFzZS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVK0IsQUFHbUUsQUFPWixBQUNBLEFBQ0EsQUFHSSxBQUNBLEFBQ0Esa0NBUEgsQUFDQSxBQUNBLEFBR0ksQUFDQSxBQUNBLFlBYkosbUNBQ3RCLGFBQ0MsY0FDQSxjQUNsQiIsImZpbGUiOiIvVXNlcnMvYXdhZ2htYXJlL0xpYnJhcnkvTW9iaWxlIERvY3VtZW50cy9jb21+YXBwbGV+Q2xvdWREb2NzL0ZpbGVzL0FXIExhYnMvV2Vic2l0ZS9sYXlvdXRzL0Jhc2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IHsgTmF2YmFyIH0gZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2YmFyXCI7XG5pbXBvcnQgeyBjb2xvcnMsIGZvbnRzLCBxdWVyaWVzIH0gZnJvbSAnLi4vYXNzZXRzL3N0eWxlcy90aGVtZSc7XG5cbmZ1bmN0aW9uIEJhc2UocHJvcHMpIHtcbiAgICByZXR1cm4gKFxuICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPEhlYWQ+XG4gICAgICAgICAgICAgICAgPGxpbmsgaHJlZj0nLi4vYXNzZXRzL3N0eWxlcy9mb250cy5jc3MnIHJlbD0nc3R5bGVzaGVldCcgLz5cbiAgICAgICAgICAgIDwvSGVhZD5cbiAgICAgICAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgICAgICAgICAgYm9keSB7XG4gICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICR7Y29sb3JzLmJsYWNrfTtcbiAgICAgICAgICAgICAgICAgICAgY29sb3I6ICR7Y29sb3JzLndoaXRlfTtcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDEwMjRweDtcbiAgICAgICAgICAgICAgICAgICAgbWF4LXdpZHRoOiA5MCU7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbjogMCBhdXRvO1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgIGgxIHsgZm9udDogJHtmb250cy5oMX07IH1cbiAgICAgICAgICAgICAgICBoMiB7IGZvbnQ6ICR7Zm9udHMuaDJ9OyB9XG4gICAgICAgICAgICAgICAgaDMgeyBmb250OiAke2ZvbnRzLmgzfTsgfVxuXG4gICAgICAgICAgICAgICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogJHtxdWVyaWVzLnNtYWxsfXB4KSB7XG4gICAgICAgICAgICAgICAgICAgIGgxIHsgZm9udDogJHtmb250cy5oMV9tb2JpbGV9OyB9XG4gICAgICAgICAgICAgICAgICAgIGgyIHsgZm9udDogJHtmb250cy5oMl9tb2JpbGV9OyB9XG4gICAgICAgICAgICAgICAgICAgIGgzIHsgZm9udDogJHtmb250cy5oM19tb2JpbGV9OyB9XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH08L3N0eWxlPlxuXG4gICAgICAgICAgICA8TmF2YmFyIC8+XG4gICAgICAgICAgICB7cHJvcHMuY2hpbGRyZW59XG4gICAgICAgIDwvZGl2PlxuICAgICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IEJhc2U7Il19 */\n/*@ sourceURL=/Users/awaghmare/Library/Mobile Documents/com~apple~CloudDocs/Files/AW Labs/Website/layouts/Base.js */")), __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["Navbar"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 31
     },
     __self: this
   }), props.children);
@@ -12363,7 +12366,7 @@ var _jsxFileName = "/Users/awaghmare/Library/Mobile Documents/com~apple~CloudDoc
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-top: 72px;\n\n    .text-content {\n        a {\n            color: ", ";\n            text-decoration: none;\n        }\n    \n        a:hover {\n            color: ", ";\n            border-bottom: 2px solid currentColor;\n        }\n    }\n\n    .social-icons {\n        width: 156px;\n        display: none;\n        \n        @media screen and (max-width: ", "px) {\n            display: block;\n        }\n    }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-top: 72px;\n\n    .text-content {\n        a {\n            color: ", ";\n            text-decoration: none;\n        }\n    \n        a:hover {\n            color: ", ";\n            border-bottom: 2px solid currentColor;\n        }\n    }\n\n    .social-icons {\n        width: 156px;\n        margin-bottom: 24px;\n        display: none;\n        \n        @media screen and (max-width: ", "px) {\n            display: block;\n        }\n    }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -12384,32 +12387,32 @@ function Index() {
     css: indexStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
     className: "text-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, "Hi, I'm Akhil."), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, "Product designer + iOS developer"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, "Former Design Chair @ ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("a", {
@@ -12417,13 +12420,13 @@ function Index() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, "The Harvard Crimson")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, "Former iOS intern @ ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("a", {
@@ -12431,7 +12434,7 @@ function Index() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, "Square"), ", ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("a", {
@@ -12439,7 +12442,7 @@ function Index() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, "The Washington Post"), ", and ", Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("a", {
@@ -12447,27 +12450,27 @@ function Index() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, "Glooko"))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_components_Navbar__WEBPACK_IMPORTED_MODULE_3__["SocialRow"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   })));
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(_layouts_Base__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, content);
